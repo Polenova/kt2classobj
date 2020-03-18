@@ -1,5 +1,6 @@
 package ru.polenova.hiearchy
 
+import ru.polenova.hiearchy.view.ViewGroup
 import ru.polenova.hiearchy.widget.Button
 import ru.polenova.hiearchy.widget.TextView
 
@@ -16,4 +17,12 @@ fun main() {
     println(textView.text)
     textView.text = "Something bad happened"
     println(textView.text) // Something bad happened
+
+    val main = ViewGroup()
+    val title = TextView("Main Screen")
+    main.addView(title)
+
+    val content = ViewGroup()
+    val readMore = Button("Read more")
+    content.addView(readMore)
 }
