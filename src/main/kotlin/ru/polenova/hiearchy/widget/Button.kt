@@ -1,3 +1,3 @@
 package ru.polenova.hiearchy.widget
 
-class Button(val button: String): TextView("Some text")
+class Button(text: String): TextView(text)

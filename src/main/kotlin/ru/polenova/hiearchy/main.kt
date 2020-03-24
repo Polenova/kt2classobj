@@ -21,8 +21,10 @@ fun main() {
     val main = ViewGroup()
     val title = TextView("Main Screen")
     main.addView(title)
+    println(main)
 
     val content = ViewGroup()
     val readMore = Button("Read more")
     content.addView(readMore)
+    content.view.click()
 }
